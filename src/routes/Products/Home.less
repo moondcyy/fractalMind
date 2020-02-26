@@ -1,0 +1,90 @@
+.banner {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tabs {
+  width: 1180px;
+  margin: 0 auto 15px;
+  background: #fff;
+  display: flex;
+
+  .search_box {
+    flex: 0 0 280px;
+    padding: 16px 23px;
+  }
+
+  .tab {
+    flex: auto;
+  }
+
+  :global {
+    .ant-tabs-bar {
+      border: none;
+      margin: 0;
+    }
+
+    .ant-tabs-nav {
+      line-height: 40px;
+    }
+  }
+}
+
+.content {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+
+  .list {
+    flex: auto;
+  }
+
+  .line {
+    flex: 0 0 12px;
+  }
+
+  .portal {
+    flex: 0 0 280px;
+    background: #fff;
+    height: 250px;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 31px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.link_box {
+  text-align: center;
+  padding: 23px 0;
+
+  a {
+    color: rgba(0, 0, 0, 0.65) !important;
+  }
+}
+
+.icon {
+  padding: 23px 0;
+}
+
+@media screen and (max-width: 576px) {
+  .tabs {
+    width: 100%;
+    display: block;
+  }
+
+  .content {
+    width: 100%;
+    display: block;
+  }
+
+  .line, .portal {
+    display: none;
+  }
+}

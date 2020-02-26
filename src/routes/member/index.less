@@ -1,0 +1,37 @@
+.layout {
+  padding: 20px;
+
+  :global {
+    .ant-layout-content {
+      margin-left: 20px;
+    }
+  }
+}
+
+.menu {
+  margin-bottom: 19px;
+}
+
+@media screen and (max-width: 575px) {
+  .layout {
+    padding: 0;
+    margin-top: 5px;
+    flex-direction: column !important;
+
+    :global {
+      .ant-layout-sider {
+        width: 100% !important;
+        max-width: 100% !important;
+        background: #fff !important;
+      }
+
+      .ant-layout-content {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+}

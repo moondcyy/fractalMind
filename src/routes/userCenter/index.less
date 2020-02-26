@@ -1,0 +1,158 @@
+@backgroundColor: #fff;
+@fontColor: #333;
+
+.layout {
+  padding: 20px;
+}
+
+.information {
+  background: @backgroundColor;
+  max-height: 373px;
+  margin-bottom: 16px;
+  padding: 28px;
+  color: @fontColor;
+  text-align: center;
+
+  .userName {
+    padding: 14px 0 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .geo {
+    line-height: 22px;
+  }
+
+  .introduce {
+    color: #999;
+    font-size: 16px;
+    padding-bottom: 21px;
+  }
+
+  .title {
+    font-size: 16px;
+    color: #999;
+    padding-bottom: 5px;
+  }
+
+  .title_num {
+    font-size: 18px;
+    color: @fontColor;
+    padding-bottom: 15px;
+  }
+
+  .btn,.btn_primary {
+    width: 100px;
+    line-height: 42px;
+    border-radius: 4px;
+    margin: 0 auto;
+    color: #333;
+    border: 1px solid #cdcdcd;
+  }
+
+  .btn_primary {
+    background: #377BB8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  background: @backgroundColor;
+  color: @fontColor;
+  line-height: 38px;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 174px;
+
+  .menu_item {
+    a {
+      display: block;
+      padding-left: 58px;
+      color: @fontColor;
+
+      &:hover {
+        background-color: rgba(55,123,184, .1);
+        border-left: 4px solid #377BB8;
+        padding-left: 54px;
+      }
+    }
+  }
+
+  .menu_active {
+    a {
+      border-left: 4px solid #377BB8;
+      padding-left: 54px;
+    }
+  }
+}
+
+.spin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.header {
+  padding: 20px;
+  background: #fff;
+  line-height: 1.4;
+
+  img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 40px;
+  }
+
+  .left {
+    float: left;
+    margin-right: 10px;
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.menu_mobile {
+  overflow-x: auto;
+  width: 100%;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+
+.data_box {
+  position: relative;
+
+  .data_divider {
+    position: absolute;
+    left: 111px;
+    height: 47px;
+    border-right: 1px solid #E3E1E1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .layout {
+    padding: 0;
+    margin-top: 5px;
+
+    :global {
+      .ant-layout-content {
+        padding: 0 10px;
+      }
+    }
+  }
+}

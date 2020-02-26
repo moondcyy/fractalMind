@@ -1,0 +1,152 @@
+@bg: #fff;
+
+.item {
+  background: @bg;
+  padding: 32px 0 24px 24px;
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.left {
+  flex: auto;
+
+  .title {
+    font-size: 22px;
+    color: #333333;
+    line-height: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .msg {
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .msg:last-child {
+    padding: 0;
+  }
+
+  .icon {
+    flex: 0 0 14px;
+  }
+
+  .content {
+    flex: auto;
+    padding-left: 14px;
+    font-size: 16px;
+    color: #333;
+    line-height: 22px;
+  }
+}
+
+.right {
+  flex: 0 0 187px;
+  text-align: center;
+
+  .price {
+    font-size: 22px;
+    color: #ED755B;
+    line-height: 30px;
+  }
+
+  .btn_check, .btn_enroll {
+    button {
+      width: 90px;
+    }
+  }
+
+  .btn_check {
+    margin: 24px auto;
+  }
+
+  .btn_enroll {
+    margin: 0 auto;
+  }
+}
+
+.my_create {
+  a {
+    display: block;
+    text-align: center;
+    margin: 18px 0;
+  }
+}
+
+.approval {
+  background: rgba(0, 0, 0, .6);
+  padding: 2px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 22px;
+}
+
+.item_btns {
+  border-top: 1px solid #e2e2e2;
+  background: @bg;
+  padding: 16px 33px;
+
+  .float_right {
+    float: right;
+  }
+
+  a {
+    margin-left: 10px;
+  }
+
+  button {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.share_tip {
+  color: #666;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .item {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .right {
+    padding: 10px 0 0 0;
+    border-top: 1px solid #E3E1E1;
+    display: flex;
+    flex: auto;
+
+    .price, .btn_check, .btn_enroll {
+      flex: 0 0 30%;
+      margin: 0;
+    }
+
+    .price {
+      flex: 0 0 20%;
+      line-height: 36px;
+    }
+
+    .btn_check {
+      margin-right: 10px;
+    }
+  }
+
+  .content {
+    min-height: 0;
+  }
+
+  .item_btns {
+    padding: 10px;
+  }
+}

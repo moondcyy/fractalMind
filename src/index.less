@@ -1,0 +1,158 @@
+html,
+body,
+:global(#root) {
+  height: 100%;
+}
+body {
+  div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+  }
+}
+:global(.ant-layout) {
+  min-height: 100vh!important;
+}
+// 覆盖submenu item height
+:global {
+  .noData {
+    padding: 150px 0;
+    text-align: center;
+    background: #fff;
+  }
+
+  .clear {
+    &:after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+  }
+
+  a:focus {
+    text-decoration: none !important;
+  }
+
+  .submit_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+    button {
+      margin: 0 5px;
+    }
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .ant-menu-sub,.ant-menu-vertical {
+    .ant-menu-item {
+      height: 35px!important;
+      line-height: 35px!important;
+    }
+  }
+  .ant-layout-footer {
+    z-index: 1;
+  }
+  .ant-table-tbody {
+    .deleteClass {
+      text-decoration: line-through;
+    }
+   .disableClass {
+      background-color: #f5f5f5;
+    }
+  }
+  // 自定义的一些样式
+  .container {
+    position: relative;
+    // min-height: 70vh;
+  }
+  .btn-group button {
+    margin-right: 20px;
+  }
+  .ant-spin-container {
+    overflow: visible !important;
+  }
+  .searchForm{
+    .ant-row,.ant-form-item {
+      margin-bottom: 12px;
+    }
+    .ant-form-item-with-help {
+      margin-bottom: 0;
+    }
+  }
+  .clearFloat::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  .sliderBox .slick-dots {
+    bottom: 20px;
+  }
+  .sliderBox .slick-slide img {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .ant-menu-item-selected, .ant-menu-horizontal, .ant-menu-item {
+    border: none !important;
+  }
+
+  .ant-list-vertical .ant-list-item-meta-avatar {
+    display: block !important;
+  }
+  // 页面容器
+  @media screen and (min-width: 1200px) {
+    .pageContainer {
+      width: 1180px;
+      margin: 15px auto;
+    }
+  }
+
+}
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+// temp fix for https://github.com/ant-design/ant-design/commit/a1fafb5b727b62cb0be29ce6e9eca8f579d4f8b7
+
+
+:global(.tableListForm) {
+  :global {
+    .ant-form-inline .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 24px;
+      display: flex;
+      > .ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
